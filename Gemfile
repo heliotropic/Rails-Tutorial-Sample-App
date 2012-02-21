@@ -18,6 +18,7 @@ group :development do
   gem 'guard-rspec'
   gem 'guard-spork'
   gem 'spork'
+  gem 'thin'
 end
 
 group :test do

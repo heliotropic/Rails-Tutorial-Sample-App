@@ -1,7 +1,7 @@
 SampleApp::Application.routes.draw do
-  get "static_pages/home"
+  get "pages/home"
 
-  get "static_pages/help"
+  get "pages/help"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
