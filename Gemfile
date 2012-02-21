@@ -18,8 +18,9 @@ group :development do
   gem 'guard-rspec'
   gem 'guard-spork'
   gem 'spork'
-  gem 'thin'
 end
+
+ gem 'thin'
 
 group :test do
   gem 'capybara'
