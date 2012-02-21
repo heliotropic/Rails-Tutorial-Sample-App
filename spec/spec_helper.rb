@@ -40,6 +40,17 @@ RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false
 end
 
+# monkeypatch to remove unnecessary output
+class Spork::Server
+  def run(argv, stderr, stdout)
+    # puts "Running tests with args #{argv.inspect}..."
+    result = run_strategy.run(argv, stderr, stdout)
+    puts "\n"
+    # puts "Done.\n\n"
+    result
+  end
+end
+
 end
 
 Spork.each_run do
