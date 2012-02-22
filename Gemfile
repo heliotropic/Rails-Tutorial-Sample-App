@@ -11,6 +11,7 @@ group :assets do
 end
 
 gem 'jquery-rails', '2.0.0'
+gem 'thin'
 
 group :development do
   gem 'sqlite3'
@@ -20,7 +21,6 @@ group :development do
   gem 'spork'
 end
 
- gem 'thin'
 
 group :test do
   gem 'capybara'
